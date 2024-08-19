@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador de texto - Alura Challenges ONE</title>
+    <link rel="stylesheet" href="./styles/style.css">
+</head>
+
+<body>
+
+    <!-- Menu logo-->
+    <header class="header">
+        <img class="logo-alura" src="./assets/LogoAlura.png" alt="Logo de Alura">
+    </header>
+
+    <!-- Base del encriptador-->
+    <main>
+        <!-- Sección de ingresar el texto para el encriptador-->
+        <div class="secciones">
+
+            <!-- Área de texto para escribir-->
+            <div class="seccion-izq">
+                <textarea class="texto-encriptador" name="texto-encriptador" id="textoEncriptador" cols="30" rows="10" placeholder="Ingrese el texto aqui"></textarea>
+
+                <!-- Especificaciones para el encriptador-->
+                <div class="informacion">
+                    <img class="img-especificaciones" src="./assets/Ícono.png">
+                    <span class="especificaciones"> Solo letras minúsculas y sin acentos </span>
+                </div>
+
+                <!-- Botones y caption para instrucciones del encriptador-->
+                 <div class="botones">
+                    <button type="button" class="boton-encriptar" id="botonEncriptar">Encriptar</button>
+                    <button type="button" class="boton-desencriptar" id="botonDesencriptar">Desencriptar</button >
+                </div>
+            </div>
+
+            <!-- Sección del encriptador para copiar el texto-->
+            <div class="seccion-der" id="seccionDer">
+                <!-- Área de texto del encriptador-->
+                <img class="ilustracion" src="./assets/MuñecoAlura.png" alt="MuñecoAlura" id="ilustracion">
+                 <div class="mensaje-encriptado" id="mensajeEncriptado">
+                    <textarea class="titulo-mensaje" id="tituloMensaje" placeholder="Ningún mensaje fue encontrado"></textarea>
+                    <p class="texto-mensaje" id="textoMensaje">Ingresa el texto que desees encriptar o desencriptar.</p>
+                    <button type="button" class="boton-copiar" id="botonCopiar">Copiar</button>
+                 </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p class="texto-footer">Creado por <a class="usuario">Juan Barreto</a></p>
+        <div class="iconos">
+            <a href="https://github.com/JuanB-web" target="_blank">
+                <img class="links" src="./assets/linkedin.svg">
+            </a>
+            <a href="https://www.linkedin.com/in/juan-barreto/" target="_blank">
+                <img class="links" src="./assets/github-mark.svg">
+            </a>
+        </div>
+    </footer>
+    
+<script src="script.js"></script> 
+</body>
+</html>
